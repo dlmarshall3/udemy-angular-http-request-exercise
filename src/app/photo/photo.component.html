@@ -1,0 +1,7 @@
+<div *ngIf="imageUrl !== ''; else noImage">
+    <img [src]="imageUrl">
+</div>
+<div>
+    <ng-template #noImage>Please generate an image</ng-template>
+</div>
+<button (click)="generateImage()">Generate Image</button>
